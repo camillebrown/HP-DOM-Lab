@@ -34,7 +34,7 @@ container.appendChild(wand)
 
 let ul = document.createElement('ul')
 ul.setAttribute('storage','trunk')
-console.log(ul)
+// console.log(ul)
 container.appendChild(ul)
 
 let listItems = ['butter beer', 'invisibility cloak', 'magic map', 'time turner', 'leash', 'Bertie Bott\'s Every Flavor [Jelly] Beans']
@@ -172,9 +172,28 @@ h4.remove()
 // parentelement.insertBefore(element to be inserted, element to be inserted before)
 container.insertBefore(h4, wand)
 
+let hide = document.querySelectorAll('li.secret')
+
+hide[0].remove()
+hide[1].remove()
+hide[2].remove()
+
+setTimeout(function(){
+    ul.appendChild(hide[0])
+    ul.appendChild(hide[1])
+    ul.appendChild(hide[2])
+},2000)
 
 
 
+let leash = document.querySelector('li.owl')
+// console.log(leash.classList)
+
+leash.classList.add('cabbage')
+// console.log(leash.classList)
+
+leash.classList.remove('cabbage')
+// console.log(leash.classList)
 
 
 
