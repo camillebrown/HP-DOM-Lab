@@ -1,6 +1,7 @@
 body {
     background-color: #F8F7FF;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .owl {
@@ -13,4 +14,10 @@ body {
 
 ul {
     list-style-type: none;
+    margin: 0;
 }
+
+table, th, td {
+    border: 1px solid gray;
+    margin: 0 auto;
+  }
