@@ -31,3 +31,30 @@ container.appendChild(h2)
 container.appendChild(h3)
 container.appendChild(h4)
 container.appendChild(wand)
+
+let ul = document.createElement('ul')
+ul.setAttribute('storage','trunk')
+console.log(ul)
+container.appendChild(ul)
+
+let listItems = ['butter beer', 'invisibility cloak', 'magic map', 'time turner', 'leash', 'Bertie Bott\'s Every Flavor [Jelly] Beans']
+
+function addElements() {
+    for (let i=0; i<listItems.length; i++){
+        var li = document.createElement('li');
+        li.innerText = listItems[i];
+        if (listItems[i] === "invisibility cloak" || listItems[i] === "magic map" || listItems[i] === "time turner"){
+            li.className = 'secret';
+        } else if (listItems[i] === "leash") {
+            li.className = "owl"
+        }
+        ul.appendChild(li)
+    }
+}
+
+addElements();
+
+
+
+
+
