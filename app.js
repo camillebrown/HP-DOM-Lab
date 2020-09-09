@@ -155,6 +155,27 @@ tr5.appendChild(td10)
 
 // tableRows();
 
+wand.remove()
+
+document.querySelector('li').remove()
+
+wand.innerText = 'New Wand'
+container.insertBefore(wand, ul)
+
+wand.style.color = 'indigo'
+
+h4.remove()
+container.appendChild(h4)
+
+h4.remove()
+
+// parentelement.insertBefore(element to be inserted, element to be inserted before)
+container.insertBefore(h4, wand)
+
+
+
+
+
 
 
 
