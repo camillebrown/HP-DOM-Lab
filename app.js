@@ -19,7 +19,7 @@ let h3 = document.createElement('h3')
 h3.innerText = "Gryffindor"
 
 let h4 = document.createElement('h4')
-h4.innerText = "Daisy"
+h4.innerText = "Pet Name: Daisy"
 
 h4.className = "owl"
 // console.log(h4)
@@ -162,7 +162,7 @@ document.querySelector('li').remove()
 wand.innerText = 'New Wand'
 container.insertBefore(wand, ul)
 
-wand.style.color = 'indigo'
+// wand.style.color = 'indigo'
 
 h4.remove()
 container.appendChild(h4)
@@ -194,6 +194,15 @@ leash.classList.add('cabbage')
 
 leash.classList.remove('cabbage')
 // console.log(leash.classList)
+
+h5.innerText = "Fall 2018"
+
+let li5 = document.createElement('li')
+li5.innerText = 'Butter beer'
+ul.prepend(li5)
+
+ul.setAttribute('storage','chest')
+
 
 
 
